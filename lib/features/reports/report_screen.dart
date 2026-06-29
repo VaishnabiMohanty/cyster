@@ -62,23 +62,23 @@ class _ReportScreenState extends ConsumerState<ReportScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const Card(
+            Card(
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: [
-                    Icon(Icons.description, size: 48, color: Colors.deepPurple),
-                    SizedBox(height: 16),
-                    Text(
+                    Icon(Icons.description, size: 48, color: Theme.of(context).colorScheme.primary),
+                    const SizedBox(height: 16),
+                    const Text(
                       'Export your data for your next doctor\'s visit.',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Text(
                       'Includes cycle history, symptom trends, and mood summaries. Personal journal text is excluded for privacy.',
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.grey),
+                      style: TextStyle(color: Theme.of(context).colorScheme.onSurfaceVariant),
                     ),
                   ],
                 ),
